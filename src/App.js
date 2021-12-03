@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import {checkWin} from './checkwin';
 import "./App.css";
+import logo from './images/logo192.png';
 
 export default function App() {
   const [ut, setUt] = useState(true);
@@ -128,6 +129,10 @@ export default function App() {
 
   return (
     <div className="App">
+      <div className='logo'>
+        <img src={logo} alt='tic-tac-toe' className='logo-img' />
+        <h1>Tic Tac Toe</h1>
+      </div>
       <div className="o-x">
         <div
           className="d0"
